@@ -52,4 +52,24 @@
   .top-nav .tag {
     display: none;
   }
+
+  /* xxxxxxxxxxxxxxxxxx */
+
+  footer .container > div a img {
+    height: 3em;
+    width: 3em;
+  }
+
+  footer .container > div > a span {
+    font-size: 1em;
+  }
+
+  footer .container > div > div > p {
+    display: none;
+  }
+
+  footer .container > div > div span {
+    font-size: 0.8em;
+    padding-left: 1em;
+  }
 }

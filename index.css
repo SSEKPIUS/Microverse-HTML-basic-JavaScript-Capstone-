@@ -149,3 +149,39 @@ a {
   white-space: nowrap;
   margin: 0 2em;
 }
+
+/* xxxxxxxxxxxxxxx */
+
+footer .container > div {
+  width: 100%;
+  display: flex;
+  color: rgb(62, 60, 60);
+  padding: 1em 0;
+}
+
+footer .container > div > a {
+  flex-basis: 40%;
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: start;
+}
+
+footer .container > div > a span {
+  margin-left: 0.5em;
+  font-size: 2em;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+footer .container > div a img {
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+}
+
+footer .container > div > div {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+}
