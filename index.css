@@ -3,10 +3,147 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+body {
+  font-family: 'lato' !important; /* stylelint-disable-line */
+  background: #fff;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.VH100 {
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cover-darker {
+  background-color: #000;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.cover-white {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 5em;
+  width: auto;
+}
+
+.top-tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 1em;
+  color: white;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.top-nav .logo {
+  flex-basis: 100%;
+}
+
+.top-nav .logo img {
+  width: 7em;
+  height: 7em;
+}
+
+.top-nav .humberger {
+  display: none;
+}
+
+.top-nav .humberger div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.top-nav nav {
+  display: flex;
+  margin: 0 5em;
+}
+
+.top-nav nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  font-size: large;
+  font-weight: 900;
+  flex-wrap: nowrap;
+}
+
+.top-nav nav ul a {
+  color: rgb(78, 72, 72);
+  font-size: 1.4em;
+}
+
+.top-nav nav ul a:focus {
+  color: rgb(199, 47, 47);
+}
+
+.top-nav .humberger-close {
+  display: none;
+}
+
+.top-nav .tag {
+  border: 5px red solid;
+  height: 3em;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: red;
+}
+
+.top-nav .tag span {
+  white-space: nowrap;
+  margin: 0 2em;
 }

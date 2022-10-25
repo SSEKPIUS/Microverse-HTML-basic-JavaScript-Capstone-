@@ -1,24 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js" defer></script>
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="index.css">
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-        crossorigin="anonymous">
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous" defer></script>
-    <title>Capstone project</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="index.js" defer></script>
+        <link rel="stylesheet"
+            href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="mobile.css">
+        <title>Capstone project</title>
+    </head>
+    <body>
+        <header>
+            <div class="cover-darker">
+                <div class="container">
+                    <ul class="top-tag">
+                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        <li>Logout</li>
+                        <li>Mypage</li>
+                        <li>Korean</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cover-white">
+                <div class="container">
+                    <div class="top-nav">
+                        <a class="logo" href="/">
+                            <img src="images/logo.jpeg" alt="logo">
+                        </a>
+                        <div class="humberger" onclick="toggleMobileMenu()">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#About">About</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#Program">Program</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#Join">Join</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#Sponsor">Sponsor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled"
+                                        href="#News">News</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="humberger-close" onclick="toggleMobileMenu()">
+                            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class=" tag">
+                            <span>
+                                live aware
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section style=" width: 100%; background-color: black; height: 50em;"></section>
+        <footer></footer>
+    </body>
 </html>

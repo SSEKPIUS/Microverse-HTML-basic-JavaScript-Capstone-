@@ -1,0 +1,55 @@
+@media all and (max-width: 768px) {
+  .container {
+    margin: 0 1em;
+    width: auto;
+  }
+
+  .top-tag {
+    display: none;
+  }
+
+  .top-nav {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .top-nav .logo {
+    display: none;
+  }
+
+  .top-nav .humberger {
+    display: block;
+  }
+
+  .top-nav nav {
+    margin: 0 0;
+    flex-basis: 100%;
+    width: 100%;
+    order: 2;
+    display: none;
+  }
+
+  .top-nav nav ul {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
+
+  .top-nav nav ul li {
+    border-bottom: 1px solid gray;
+  }
+
+  .top-nav nav ul li a {
+    font-size: xxx-large;
+  }
+
+  .top-nav .humberger-close {
+    /* display: block; */
+    margin-top: 1em;
+    align-self: end;
+  }
+
+  .top-nav .tag {
+    display: none;
+  }
+}
