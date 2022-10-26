@@ -155,6 +155,101 @@ a {
   margin: 0 2em;
 }
 
+/* xxxxxxxxxxxxxxx About page */
+
+.about-page {
+  background-image: url('images/landing.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-page .container > div {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.about-page .container > div h1 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 38pt;
+  letter-spacing: 2px;  
+  width: 70%;
+  font-family: system-ui;
+  background: -webkit-linear-gradient(rgb(197, 110, 110), rgb(92, 29, 29));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-page .container > div .greeting {
+  color: rgb(218 56 56);
+  font-size: 1.4em;
+  font-weight: 100;
+  margin: 3em 0 0 0;
+  padding: 0;
+  visibility: hidden;
+}
+
+.about-page .container > div .about {
+  color: rgb(78, 72, 72);
+  font-size: 1.2em;
+  margin: 0;
+  padding: 1.5em 1em;
+  border: #fff solid 3px;
+  background-color: hsl(240deg 7% 97%);
+  width: 80%;
+}
+
+.about-page .container > div .contactus {
+  color: rgb(78, 72, 72);
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+
+.about-page .container > div .mail {
+  color: #000;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.logo-page .container > div {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-page .container > div h3 {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 2em 0;
+}
+
+.logo-page .container > div .about {
+  color: rgb(78, 72, 72);
+  font-size: 1.2em;
+  margin: 0;
+  padding: 1.5em 1em;
+  width: 80%;
+  text-align: center;
+}
+
+.logo-page .container > div img {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px #cfbcbc solid;
+  margin-bottom: 2em;
+  padding: 0 4em;
+}
+
 /* xxxxxxxxxxxxxxx landing page */
 
 .landing-page {

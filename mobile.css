@@ -62,6 +62,55 @@
     display: none;
   }
 
+  /* xxxxxxxxxxxxxxx About page */
+
+  .about-page .container > div {
+    height: auto;
+    gap: 1em;
+  }
+
+  .about-page .container > div h1 {
+    font-size: 28pt;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-page .container > div .greeting {
+    visibility: visible;
+  }
+
+  .about-page .container > div .about {
+    padding: 1em 1em;
+    width: 100%;
+  }
+
+  .about-page .container > div .contactus {
+    font-size: 1.1em;
+    text-align: center;
+  }
+
+  .about-page .container > div .mail {
+    font-size: 1em;
+    margin-bottom: 3em;
+  }
+  
+  .logo-page .container > div h3 {
+    margin: 1em 0;
+  }
+  
+  .logo-page .container > div .about {
+    font-size: 1.1em;
+    padding: 1em 0em;
+    width: 100%;
+  }
+  
+  .logo-page .container > div img {
+    border: 1px #cfbcbc solid;
+    margin-bottom: 2em;
+    width: 100%;
+  }
+
+
   /* xxxxxxxxxxxxxxx landing page */
 
   .landing-page .container > div {
