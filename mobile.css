@@ -36,6 +36,14 @@
     width: 100%;
   }
 
+  .top-nav .home-mobile {
+    display: flex;
+  }
+
+  .top-nav .home-mobile a {
+    color: rgb(198, 27, 27) !important;
+  }
+
   .top-nav nav ul li {
     border-bottom: 1px solid gray;
   }
@@ -52,6 +60,34 @@
 
   .top-nav .tag {
     display: none;
+  }
+
+  /* xxxxxxxxxxxxxxx landing page */
+
+  .landing-page .container > div {
+    gap: 1em;
+  }
+
+  .landing-page .container > div h1 {
+    font-size: 25pt;
+    width: 100%;
+  }
+
+  .landing-page .container > div .greeting {
+    font-size: 2em;
+  }
+
+  .landing-page .container > div .about {
+    padding: 1em 1em;
+    width: 100%;
+  }
+
+  .landing-page .container > div .date {
+    font-size: 1.5em;
+  }
+
+  .landing-page .container > div .location {
+    font-size: 1em;
   }
 
   /* xxxxxxxxxxxxxxx program */

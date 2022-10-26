@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500&family=Poppins&family=Lato&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500&family=Poppins&family=cocogoose&family=Lato&family=Roboto:wght@700&display=swap');
 /* stylelint-disable  no-descending-specificity */
 html {
   box-sizing: border-box;
@@ -112,6 +112,10 @@ a {
   margin: 0 5em;
 }
 
+.top-nav .home-mobile {
+  display: none;
+}
+
 .top-nav nav ul {
   display: flex;
   flex-direction: row;
@@ -149,6 +153,72 @@ a {
 .top-nav .tag span {
   white-space: nowrap;
   margin: 0 2em;
+}
+
+/* xxxxxxxxxxxxxxx landing page */
+
+.landing-page {
+  background-image: url('images/landing.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-page .container > div {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2em;
+}
+
+.landing-page .container > div h1 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 65pt;
+  letter-spacing: 2px;  
+  width: 70%;
+  font-family: system-ui;
+  background: -webkit-linear-gradient(rgb(197, 110, 110), rgb(92, 29, 29));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.landing-page .container > div .greeting {
+  color: rgb(218 56 56);
+  font-size: 3em;
+  font-family: 'Circular-Loom';
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-page .container > div .about {
+  color: rgb(78, 72, 72);
+  font-size: 1.2em;
+  margin: 0;
+  padding: 1.5em 1em;
+  border: #fff solid 3px;
+  background-color: rgb(222 218 218);
+  width: 50%;
+}
+
+.landing-page .container > div .date {
+  color: rgb(78, 72, 72);
+  font-size: 2.5em;
+  font-family: 'Circular-Loom';
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-page .container > div .location {
+  color: rgb(78, 72, 72);
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
 }
 
 /* xxxxxxxxxxxxxxx program */
@@ -360,7 +430,7 @@ a {
 }
 
 .partners h2 {
-  color: #fff;
+  color: #b2b0b0;
 }
 
 .partners h2,

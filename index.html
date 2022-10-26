@@ -1,229 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js" defer></script>
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="mobile.css">
-    <title>Capstone project</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="index.js" defer></script>
+        <link rel="stylesheet"
+            href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="mobile.css">
+        <title>Capstone project</title>
+    </head>
 
-<body>
-    <header>
-        <div class="cover-darker">
-            <div class="container">
-                <ul class="top-tag">
-                    <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                    <li>Logout</li>
-                    <li>Mypage</li>
-                    <li>Korean</li>
-                </ul>
-            </div>
-        </div>
-        <div class="cover-white">
-            <div class="container">
-                <div class="top-nav">
-                    <a class="logo" href="/#">
-                        <img src="images/logo.jpeg" alt="logo">
-                    </a>
-                    <div class="humberger" onclick="toggleMobileMenu()">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="/About">About</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="#Program">Program</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Join">Join</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Sponsor">Sponsor</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#News">News</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="humberger-close" onclick="toggleMobileMenu()">
-                        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-                    </div>
-                    <div class=" tag">
-                        <span>
-                            live aware
-                        </span>
-                    </div>
+    <body>
+        <header>
+            <div class="cover-darker">
+                <div class="container">
+                    <ul class="top-tag">
+                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        <li>Logout</li>
+                        <li>Mypage</li>
+                        <li>Korean</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <div style="height: 50em;"></div>
-
-    <section>
-        <div class="cover-darker">
-            <div class="container">
-                <div class="main-program">
-                    <div>
-                        <h2>main program</h2>
-                        <p class="underline"></p>
-                    </div>
-                    <div class="cards">
-                        <div class="card">
-                            <i class="fa fa-podcast fa-3x" aria-hidden="true"></i>
-                            <h3>lecture</h3>
-                            <p>Diam justo et amet sadipscing accusam  duo et. Sea ipsum lorem est sadipscing ipsum est duo.</p>
-                        </div>
-                        <div class="card">
-                            <i class="fa fa-shopping-bag fa-3x" aria-hidden="true"></i>
-                            <h3>CC exhibition</h3>
-                            <p>Seemed and charms cheer from for  he, to true one amiss maidens whose mine below dares..</p>
-                        </div>
-                        <div class="card">
-                            <i class="fa fa-forumbee fa-3x" aria-hidden="true"></i>
-                            <h3>forum</h3>
-                            <p>Und folgenden michjenem folgenden ihr euch dunst ist fühlt busen, fühl die.</p>
-                        </div>
-                        <div class="card">
-                            <i class="fa fa-building fa-3x" aria-hidden="true"></i>
-                            <h3>workshop</h3>
-                            <p>Fyodumtul nym hioll de um yg symeonnok therthetyk vh ualallal uiraga werethul therthetyk. Urodum.</p>
-                        </div>
-                        <div class="card">
-                            <i class="fa fa-free-code-camp fa-3x" aria-hidden="true"></i>
-                            <h3>CC ignite</h3>
-                            <p>Kiun sakon tien-cxi metitan veloj la povis sendube gastoj sian sed, ridetis en knabo pri la sxipo. Tiam tiom bestoj.</p>
-                        </div>
-                    </div>
-                    <div class="link-all">
-                        <a href="#">
-                            see the whole proram
+            <div class="cover-white">
+                <div class="container">
+                    <div class="top-nav">
+                        <a class="logo" href="/#">
+                            <img src="images/logo.jpeg" alt="logo">
                         </a>
-                    </div>
-                    <div class="input-btn">
-                        <input class="input-field" type="button" value="Join LIVE AWARE Summit 2020">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="cover-white">
-            <div class="container">
-                <div class="featured-speakers">
-                    <div>
-                        <h2>featured speakers</h2>
-                        <p class="underline"></p>
-                    </div>
-                    <div class="speakers">
-                       <div class="speaker">
-                            <div class="profile">
-                                <img src="images/draft.jpg" alt="draft pic">
-                                <img src="images/pf1.jpg" alt="profile pic">
-                            </div>
-                            <div class="biodata">
-                                <h3>yochai banker</h3>
-                                <p class="position">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus unde ipsam fugit .</p>
-                                <p class="spliter"></p>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, saepe molestias. Nemo animi, quaerat voluptatem recusandae tenetur a sequi ipsam. Itaque, eum reiciendis. Repellat nostrum, optio nulla odio voluptatibus natus!</p>
-                            </div>
-                       </div>
-                       <div class="speaker">
-                            <div class="profile">
-                                <img src="images/draft.jpg" alt="draft pic">
-                                <img src="images/pf1.jpg" alt="profile pic">
-                            </div>
-                            <div class="biodata">
-                                <h3>yochai banker</h3>
-                                <p class="position">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus unde ipsam fugit .</p>
-                                <p class="spliter"></p>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, saepe molestias. Nemo animi, quaerat voluptatem recusandae tenetur a sequi ipsam. Itaque, eum reiciendis. Repellat nostrum, optio nulla odio voluptatibus natus!</p>
-                            </div>
-                       </div>
-                       <div class="speaker">
-                            <div class="profile">
-                                <img src="images/draft.jpg" alt="draft pic">
-                                <img src="images/pf1.jpg" alt="profile pic">
-                            </div>
-                            <div class="biodata">
-                                <h3>yochai banker</h3>
-                                <p class="position">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus unde ipsam fugit .</p>
-                                <p class="spliter"></p>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, saepe molestias. Nemo animi, quaerat voluptatem recusandae tenetur a sequi ipsam. Itaque, eum reiciendis. Repellat nostrum, optio nulla odio voluptatibus natus!</p>
-                            </div>
-                       </div>
-                       <div class="speaker">
-                            <div class="profile">
-                                <img src="images/draft.jpg" alt="draft pic">
-                                <img src="images/pf1.jpg" alt="profile pic">
-                            </div>
-                            <div class="biodata">
-                                <h3>yochai banker</h3>
-                                <p class="position">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus unde ipsam fugit .</p>
-                                <p class="spliter"></p>
-                                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, saepe molestias. Nemo animi, quaerat voluptatem recusandae tenetur a sequi ipsam. Itaque, eum reiciendis. Repellat nostrum, optio nulla odio voluptatibus natus!</p>
-                            </div>
-                       </div>
-                       <div class="speaker-btn">
-                        <div class="input-speakers">
-                            <i class="fa fa-chevron-down icon" aria-hidden="true"></i>
-                            <input class="input-field" type="button" value="MORE">
+                        <div class="humberger" onclick="toggleMobileMenu()">
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
-                       </div>
+                        <nav>
+                            <ul>
+                                <li class="home-mobile">
+                                    <a href="/">Home</a>
+                                </li>
+                                <li>
+                                    <a href="/About">About</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#Program">Program</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#Join">Join</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#Sponsor">Sponsor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#News">News</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="humberger-close"
+                            onclick="toggleMobileMenu()">
+                            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class=" tag">
+                            <span>
+                                live aware
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="cover-darker">
-            <div class="container">
-                <div class="partners">
+        </header>
+
+        <section>
+            <div class="landing-page">
+                <div class="container">
                     <div>
-                        <h2>partner</h2>
-                        <p class="underline"></p>
-                    </div>
-                    <div>
-                        <img src="images/mozilla.png" alt="mozilla">
-                        <img src="images/google.png" alt="google">
-                        <img src="images/naver.png" alt="naver">
-                        <img src="images/kakao.png" alt="kakao">
-                        <img src="images/bnb.png" alt="airbnb">
+                        <h3 class="greeting">"Hello! Sharing World"</h3>
+                        <h1>live aware global summit 2022</h1>
+                        <p class="about">A joyful celebration believing in the value of openness and sharing, creating a positive
+                            change with poeple from all over 100 countries is taking place in October , in korea.
+                        </p>
+                        <p class="date">2022.10.17(THUR) ~ 30(FRI)</p>
+                        <p class="location">@ National Museum of Korea, Art Center Nabi and more</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer>
-        <div class="cover-white">
-            <div class="container">
-                <div>
-                    <a href="/">
-                        <img src="images/logo.jpeg" alt="logo">
-                        <span>live aware</span>
-                    </a>
-                    <div>
-                        <span>2022 live aware, corporate rights reserved</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Eaque sed in perferendis, quod aperiam optio maiores omnis ipsum, 
-                            et pariatur tempore fuga quisquam reprehenderit veritatis, 
-                            molestias corporis dolores sapiente commodi!</p>
+        </section>
+
+        <section>
+            <div class="cover-darker">
+                <div class="container">
+                    <div class="main-program">
+                        <div>
+                            <h2>main program</h2>
+                            <p class="underline"></p>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <i class="fa fa-podcast fa-3x"
+                                    aria-hidden="true"></i>
+                                <h3>lecture</h3>
+                                <p>Diam justo et amet sadipscing accusam duo et.
+                                    Sea ipsum lorem est sadipscing ipsum est
+                                    duo.</p>
+                            </div>
+                            <div class="card">
+                                <i class="fa fa-shopping-bag fa-3x"
+                                    aria-hidden="true"></i>
+                                <h3>CC exhibition</h3>
+                                <p>Seemed and charms cheer from for he, to true
+                                    one amiss maidens whose mine below dares..</p>
+                            </div>
+                            <div class="card">
+                                <i class="fa fa-forumbee fa-3x"
+                                    aria-hidden="true"></i>
+                                <h3>forum</h3>
+                                <p>Und folgenden michjenem folgenden ihr euch
+                                    dunst ist fühlt busen, fühl die.</p>
+                            </div>
+                            <div class="card">
+                                <i class="fa fa-building fa-3x"
+                                    aria-hidden="true"></i>
+                                <h3>workshop</h3>
+                                <p>Fyodumtul nym hioll de um yg symeonnok
+                                    therthetyk vh ualallal uiraga werethul
+                                    therthetyk. Urodum.</p>
+                            </div>
+                            <div class="card">
+                                <i class="fa fa-free-code-camp fa-3x"
+                                    aria-hidden="true"></i>
+                                <h3>CC ignite</h3>
+                                <p>Kiun sakon tien-cxi metitan veloj la povis
+                                    sendube gastoj sian sed, ridetis en knabo
+                                    pri la sxipo. Tiam tiom bestoj.</p>
+                            </div>
+                        </div>
+                        <div class="link-all">
+                            <a href="#">
+                                see the whole proram
+                            </a>
+                        </div>
+                        <div class="input-btn">
+                            <input class="input-field" type="button" value="Join
+                                LIVE AWARE Summit 2020">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-</body>
+        </section>
+
+        <section>
+            <div class="cover-white">
+                <div class="container">
+                    <div class="featured-speakers">
+                        <div>
+                            <h2>featured speakers</h2>
+                            <p class="underline"></p>
+                        </div>
+                        <div class="speakers">
+                            <div class="speaker">
+                                <div class="profile">
+                                    <img src="images/draft.jpg" alt="draft pic">
+                                    <img src="images/pf1.jpg" alt="profile pic">
+                                </div>
+                                <div class="biodata">
+                                    <h3>yochai banker</h3>
+                                    <p class="position">Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Quasi
+                                        accusamus unde ipsam fugit .</p>
+                                    <p class="spliter"></p>
+                                    <p class="description">Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit.
+                                        Labore, saepe molestias. Nemo animi,
+                                        quaerat voluptatem recusandae tenetur a
+                                        sequi ipsam. Itaque, eum reiciendis.
+                                        Repellat nostrum, optio nulla odio
+                                        voluptatibus natus!</p>
+                                </div>
+                            </div>
+                            <div class="speaker">
+                                <div class="profile">
+                                    <img src="images/draft.jpg" alt="draft pic">
+                                    <img src="images/pf1.jpg" alt="profile pic">
+                                </div>
+                                <div class="biodata">
+                                    <h3>yochai banker</h3>
+                                    <p class="position">Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Quasi
+                                        accusamus unde ipsam fugit .</p>
+                                    <p class="spliter"></p>
+                                    <p class="description">Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit.
+                                        Labore, saepe molestias. Nemo animi,
+                                        quaerat voluptatem recusandae tenetur a
+                                        sequi ipsam. Itaque, eum reiciendis.
+                                        Repellat nostrum, optio nulla odio
+                                        voluptatibus natus!</p>
+                                </div>
+                            </div>
+                            <div class="speaker">
+                                <div class="profile">
+                                    <img src="images/draft.jpg" alt="draft pic">
+                                    <img src="images/pf1.jpg" alt="profile pic">
+                                </div>
+                                <div class="biodata">
+                                    <h3>yochai banker</h3>
+                                    <p class="position">Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Quasi
+                                        accusamus unde ipsam fugit .</p>
+                                    <p class="spliter"></p>
+                                    <p class="description">Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit.
+                                        Labore, saepe molestias. Nemo animi,
+                                        quaerat voluptatem recusandae tenetur a
+                                        sequi ipsam. Itaque, eum reiciendis.
+                                        Repellat nostrum, optio nulla odio
+                                        voluptatibus natus!</p>
+                                </div>
+                            </div>
+                            <div class="speaker">
+                                <div class="profile">
+                                    <img src="images/draft.jpg" alt="draft pic">
+                                    <img src="images/pf1.jpg" alt="profile pic">
+                                </div>
+                                <div class="biodata">
+                                    <h3>yochai banker</h3>
+                                    <p class="position">Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Quasi
+                                        accusamus unde ipsam fugit .</p>
+                                    <p class="spliter"></p>
+                                    <p class="description">Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit.
+                                        Labore, saepe molestias. Nemo animi,
+                                        quaerat voluptatem recusandae tenetur a
+                                        sequi ipsam. Itaque, eum reiciendis.
+                                        Repellat nostrum, optio nulla odio
+                                        voluptatibus natus!</p>
+                                </div>
+                            </div>
+                            <div class="speaker-btn">
+                                <div class="input-speakers">
+                                    <i class="fa fa-chevron-down icon"
+                                        aria-hidden="true"></i>
+                                    <input class="input-field" type="button"
+                                        value="MORE">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="cover-darker">
+                <div class="container">
+                    <div class="partners">
+                        <div>
+                            <h2>partner</h2>
+                            <p class="underline"></p>
+                        </div>
+                        <div>
+                            <img src="images/mozilla.png" alt="mozilla">
+                            <img src="images/google.png" alt="google">
+                            <img src="images/naver.png" alt="naver">
+                            <img src="images/kakao.png" alt="kakao">
+                            <img src="images/bnb.png" alt="airbnb">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="cover-white">
+                <div class="container">
+                    <div>
+                        <a href="/">
+                            <img src="images/logo.jpeg" alt="logo">
+                            <span>live aware</span>
+                        </a>
+                        <div>
+                            <span>2022 live aware, corporate rights reserved</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit.
+                                Eaque sed in perferendis, quod aperiam optio
+                                maiores omnis ipsum,
+                                et pariatur tempore fuga quisquam reprehenderit
+                                veritatis,
+                                molestias corporis dolores sapiente commodi!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 
 </html>
