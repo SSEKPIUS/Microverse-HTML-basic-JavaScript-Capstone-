@@ -151,7 +151,81 @@ a {
   margin: 0 2em;
 }
 
-/* xxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxx program */
+
+.main-program {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-program h2 {
+  color: #fff;
+}
+
+.main-program .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2em;
+}
+
+.main-program .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 18%;
+  background-color: rgb(88, 85, 85);
+  padding: 0.8em;
+  align-self: baseline;
+  gap: 1em;
+}
+
+.main-program .cards .card:hover {
+  border: 1px #fff solid;
+}
+
+.main-program .cards .card h3 {
+  color: rgb(223, 59, 59);
+  text-transform: capitalize;
+  font-size: 1.5em;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
+.main-program .cards .card p,
+.main-program .cards .card i {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.main-program .link-all a {
+  color: #fff;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin: 3em 0;
+}
+
+.main-program .input-btn {
+  display: none;
+}
+
+.main-program .input-field {
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 900;
+  background-color: rgb(220, 72, 72);
+  border: none;
+  color: #fff;
+}
+
+/* xxxxxxxxxxxxxxx speakers */
 .featured-speakers h2 {
   color: rgb(78, 72, 72);
 }
@@ -259,7 +333,7 @@ a {
   text-align: center;
 }
 
-/* xxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxx partners */
 
 .partners {
   display: flex;
@@ -268,7 +342,8 @@ a {
 }
 
 .partners > div,
-.featured-speakers > div {
+.featured-speakers > div,
+.main-program > div {
   display: flex;
   flex-wrap: wrap;
   gap: 2px;
@@ -279,7 +354,8 @@ a {
 }
 
 .partners > div:first-child,
-.featured-speakers > div:first-child {
+.featured-speakers > div:first-child,
+.main-program > div:first-child {
   flex-direction: column;
 }
 
@@ -288,15 +364,17 @@ a {
 }
 
 .partners h2,
-.featured-speakers h2 {
+.featured-speakers h2,
+.main-program h2 {
   text-transform: capitalize;
-  font-size: 2.5em;
+  font-size: 2.3em;
   margin: 0;
   padding: 0;
 }
 
 .partners p.underline,
-.featured-speakers p.underline {
+.featured-speakers p.underline,
+.main-program p.underline {
   border-bottom: 1px solid red;
   width: 4%;
   margin: 0;
@@ -309,7 +387,7 @@ a {
   margin: 0 20px;
 }
 
-/* xxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxx footer */
 
 footer .container > div {
   width: 100%;
