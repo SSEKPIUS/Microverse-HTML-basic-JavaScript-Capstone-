@@ -53,6 +53,22 @@
     display: none;
   }
 
+  /* xxxxxxxxxxxxxxx */
+
+  .partners > div {
+    padding: 20px 0;
+  }
+
+  .partners h2 {
+    font-size: 1.5em;
+  }
+
+  .partners img {
+    width: 21.33%;
+    height: 37px;
+    margin: 0 18px;
+  }
+
   /* xxxxxxxxxxxxxxxxxx */
 
   footer .container > div a img {
