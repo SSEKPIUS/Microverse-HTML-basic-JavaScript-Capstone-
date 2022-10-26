@@ -1,3 +1,4 @@
+/* stylelint-disable  no-descending-specificity */
 @media all and (max-width: 768px) {
   .container {
     margin: 0 1em;
@@ -55,12 +56,64 @@
 
   /* xxxxxxxxxxxxxxx */
 
-  .partners > div {
+  .featured-speakers .speakers {
+    margin: 2em 0;
+  }
+
+  .featured-speakers .speakers > div {
+    flex-basis: 100%;
+  }
+
+  .featured-speakers .speakers .speaker > div:first-child {
+    flex-basis: 32%;
+  }
+
+  .featured-speakers .speakers .speaker > div:nth-child(2) {
+    flex-basis: 78%;
+  }
+
+  .featured-speakers .speakers .profile img:first-child {
+    width: 3em;
+    height: 3em;
+    top: -8px;
+    left: -8px;
+  }
+
+  .featured-speakers .speakers .profile img:nth-child(2) {
+    width: 6em;
+    height: 6em;
+  }
+
+  .featured-speakers .speaker .biodata h3 {
+    font-size: 1.2em;
+  }
+
+  .featured-speakers .speaker .biodata .position {
+    font-size: 1em;
+  }
+
+  .featured-speakers .speaker .biodata .description {
+    font-size: 1em;
+  }
+
+  .featured-speakers .speaker-btn {
+    display: block;
+  }
+
+  /* xxxxxxxxxxxxxxx */
+
+  .partners > div .featured-speakers > div {
     padding: 20px 0;
   }
 
-  .partners h2 {
+  .partners h2,
+  .featured-speakers h2 {
     font-size: 1.5em;
+  }
+
+  .partners p.underline,
+  .featured-speakers p.underline {
+    width: 15%;
   }
 
   .partners img {
