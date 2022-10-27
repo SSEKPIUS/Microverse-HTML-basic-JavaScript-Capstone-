@@ -9,10 +9,6 @@
     color: black !important;
   }
 
-  .desktop-hide {
-    display: flex !important;
-  }
-
   .container {
     margin: 0 1em;
     width: auto;

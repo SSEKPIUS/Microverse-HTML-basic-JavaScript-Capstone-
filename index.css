@@ -82,10 +82,6 @@ a {
   width: auto;
 }
 
-.desktop-hide {
-  display: none !important;
-}
-
 .top-tag {
   display: flex;
   flex-direction: row;
