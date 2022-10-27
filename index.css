@@ -60,6 +60,15 @@ a {
   padding: 0;
 }
 
+.cover-darker-desktop {
+  background-color: rgba(0, 0, 0, 0.761) !important;
+  color: #fff;
+}
+
+.cover-darker-desktop * {
+  color: #fff !important;
+}
+
 .cover-white {
   background-color: #fff;
   width: 100%;
@@ -71,6 +80,10 @@ a {
 .container {
   margin: 0 5em;
   width: auto;
+}
+
+.desktop-hide {
+  display: none !important;
 }
 
 .top-tag {
@@ -114,6 +127,10 @@ a {
 
 .top-nav .home-mobile {
   display: none;
+}
+
+.top-nav .active a {
+  color: rgb(198, 27, 27) !important;
 }
 
 .top-nav nav ul {
@@ -178,7 +195,7 @@ a {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 38pt;
-  letter-spacing: 2px;  
+  letter-spacing: 2px;
   width: 70%;
   font-family: system-ui;
   background: -webkit-linear-gradient(rgb(197, 110, 110), rgb(92, 29, 29));
@@ -220,20 +237,23 @@ a {
   text-decoration: underline;
 }
 
-.logo-page .container > div {
+/* xxxxxxxxxxx logopage */
+
+.logo-page {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+  width: 100%;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.271);
 }
 
-.logo-page .container > div h3 {
-  text-align: center;
-  text-transform: capitalize;
-  margin: 2em 0;
+.logo-page h2 {
+  color: rgb(78, 72, 72);
 }
 
-.logo-page .container > div .about {
+.logo-page .about {
   color: rgb(78, 72, 72);
   font-size: 1.2em;
   margin: 0;
@@ -242,12 +262,74 @@ a {
   text-align: center;
 }
 
-.logo-page .container > div img {
+.logo-page img {
   margin-left: auto;
   margin-right: auto;
   border: 1px #cfbcbc solid;
   margin-bottom: 2em;
-  padding: 0 4em;
+  padding: 0 7em;
+}
+
+/* xxxxxxxxxxxxxx past summits */
+
+.past-summits {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.past-summits h2 {
+  color: rgb(78, 72, 72);
+}
+
+.past-summits .about {
+  color: rgb(78, 72, 72);
+  font-size: 1.2em;
+  margin: 0;
+  padding: 1.5em 1em;
+  width: 80%;
+  text-align: center;
+}
+
+.past-summits .summits {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.past-summits .summits > div {
+  position: relative;
+  flex-basis: 40%;
+}
+
+.past-summits .summits > div .text {
+  position: absolute;
+  color: aliceblue;
+  top: 30%;
+  left: 15%;
+}
+
+.past-summits .summits > div .text h3 {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+}
+
+.past-summits .summits > div .text p {
+  font-size: 1.3em;
+}
+
+.past-summits .summits > div img {
+  outline: 11em solid rgba(255, 0, 0, 0.353) !important;
+  outline-offset: -11em;
+  overflow: hidden;
+  height: 22em;
+  width: 33em;
 }
 
 /* xxxxxxxxxxxxxxx landing page */
@@ -273,7 +355,7 @@ a {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 65pt;
-  letter-spacing: 2px;  
+  letter-spacing: 2px;
   width: 70%;
   font-family: system-ui;
   background: -webkit-linear-gradient(rgb(197, 110, 110), rgb(92, 29, 29));
@@ -284,7 +366,7 @@ a {
 .landing-page .container > div .greeting {
   color: rgb(218 56 56);
   font-size: 3em;
-  font-family: 'Circular-Loom';
+  font-family: 'Circular-Loom'; /* stylelint-disable-line */
   font-weight: 100;
   margin: 4em 0 0 0;
   padding: 0;
@@ -303,7 +385,7 @@ a {
 .landing-page .container > div .date {
   color: rgb(78, 72, 72);
   font-size: 2.5em;
-  font-family: 'Circular-Loom';
+  font-family: 'Circular-Loom';/* stylelint-disable-line */
   font-weight: 900;
   margin: 0;
   padding: 0;
@@ -509,7 +591,9 @@ a {
 
 .partners > div,
 .featured-speakers > div,
-.main-program > div {
+.main-program > div,
+.logo-page > div,
+.past-summits > div {
   display: flex;
   flex-wrap: wrap;
   gap: 2px;
@@ -521,7 +605,9 @@ a {
 
 .partners > div:first-child,
 .featured-speakers > div:first-child,
-.main-program > div:first-child {
+.main-program > div:first-child,
+.logo-page > div:first-child,
+.past-summits > div:first-child {
   flex-direction: column;
 }
 
@@ -531,7 +617,9 @@ a {
 
 .partners h2,
 .featured-speakers h2,
-.main-program h2 {
+.main-program h2,
+.logo-page h2,
+.past-summits h2 {
   text-transform: capitalize;
   font-size: 2.3em;
   margin: 0;
@@ -540,7 +628,9 @@ a {
 
 .partners p.underline,
 .featured-speakers p.underline,
-.main-program p.underline {
+.main-program p.underline,
+.logo-page p.underline,
+.past-summits p.underline {
   border-bottom: 1px solid red;
   width: 4%;
   margin: 0;

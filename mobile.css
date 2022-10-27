@@ -1,5 +1,18 @@
 /* stylelint-disable  no-descending-specificity */
 @media all and (max-width: 768px) {
+  .cover-darker-desktop {
+    background-color: inherit !important;
+    color: #fff;
+  }
+
+  .cover-darker-desktop * {
+    color: black !important;
+  }
+
+  .desktop-hide {
+    display: flex !important;
+  }
+
   .container {
     margin: 0 1em;
     width: auto;
@@ -38,10 +51,6 @@
 
   .top-nav .home-mobile {
     display: flex;
-  }
-
-  .top-nav .home-mobile a {
-    color: rgb(198, 27, 27) !important;
   }
 
   .top-nav nav ul li {
@@ -93,23 +102,74 @@
     font-size: 1em;
     margin-bottom: 3em;
   }
-  
-  .logo-page .container > div h3 {
-    margin: 1em 0;
+
+  /* xxxxxxxxxxxx logo page */
+
+  .logo-page h2 {
+    margin: 0.5em 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5em;
   }
-  
-  .logo-page .container > div .about {
+
+  .logo-page .about {
     font-size: 1.1em;
-    padding: 1em 0em;
+    padding: 1em 0;
     width: 100%;
   }
-  
-  .logo-page .container > div img {
+
+  .logo-page img {
     border: 1px #cfbcbc solid;
     margin-bottom: 2em;
     width: 100%;
   }
 
+  /* xxxxxxxxxxxxxx past summits */
+
+  .past-summits h2 {
+    margin: 0.5em 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .past-summits .about {
+    font-size: 1.1em;
+    padding: 1em 0;
+    width: 100%;
+  }
+
+  .past-summits .summits {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .past-summits .summits > div {
+    flex-basis: 100%;
+  }
+
+  .past-summits .summits > div .text {
+    top: 15%;
+    left: 0;
+    text-align: center;
+  }
+
+  .past-summits .summits > div .text h3 {
+    font-size: 3em;
+  }
+
+  .past-summits .summits > div .text p {
+    font-size: 1.3em;
+  }
+
+  .past-summits .summits > div img {
+    outline: 8em solid rgba(255, 0, 0, 0.353) !important;
+    outline-offset: -8em;
+    height: 13em;
+    width: 18em;
+  }
 
   /* xxxxxxxxxxxxxxx landing page */
 
