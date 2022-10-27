@@ -19,7 +19,8 @@ body {
   color: #000;
   margin: 0;
   padding: 0;
-  overflow-x: hidden !important;
+  overflow-x: hidden !important;    margin: 0;
+  color: #333;
 }
 
 .d-none {
@@ -39,7 +40,6 @@ header {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  position: fixed;
   width: 100%;
   top: 0;
 }
@@ -53,11 +53,15 @@ a {
 }
 
 .cover-darker {
-  background-color: rgba(0, 0, 0, 0.761);
+  background-color: #272a32;
   width: 100%;
   height: auto;
   margin: 0;
   padding: 0;
+}
+
+.pattern {
+   background-image: url('images/pattern_bg.png');
 }
 
 .cover-darker-desktop {
@@ -78,8 +82,9 @@ a {
 }
 
 .container {
-  margin: 0 5em;
-  width: auto;
+  max-width: 1100px;
+  width: 98%;
+  margin: 0 auto;
 }
 
 .top-tag {
@@ -88,6 +93,7 @@ a {
   justify-content: end;
   gap: 1em;
   color: white;
+  margin: 5px;
 }
 
 .top-nav {
@@ -101,8 +107,8 @@ a {
 }
 
 .top-nav .logo img {
-  width: 7em;
-  height: 7em;
+  width: 80px;
+  height: 80px;
 }
 
 .top-nav .humberger {
@@ -134,13 +140,13 @@ a {
   flex-direction: row;
   gap: 2em;
   font-size: large;
-  font-weight: 900;
+  font-weight: 700;
   flex-wrap: nowrap;
 }
 
 .top-nav nav ul a {
   color: rgb(78, 72, 72);
-  font-size: 1.4em;
+  font-size: 0.938em;
 }
 
 .top-nav nav ul a:focus {
@@ -171,18 +177,16 @@ a {
 /* xxxxxxxxxxxxxxx About page */
 
 .about-page {
-  background-image: url('images/landing.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #f7f7f8 url('images/about_bg_01.png') center no-repeat;
 }
 
 .about-page .container > div {
-  height: 100vh;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  gap: 2em;
+  gap: 5em;
+  padding: 12em 0;
 }
 
 .about-page .container > div h1 {
@@ -209,13 +213,15 @@ a {
 }
 
 .about-page .container > div .about {
-  color: rgb(78, 72, 72);
-  font-size: 1.2em;
-  margin: 0;
-  padding: 1.5em 1em;
-  border: #fff solid 3px;
-  background-color: hsl(240deg 7% 97%);
-  width: 80%;
+  margin: auto;
+  padding: 38px 38px;
+  line-height: 25px;
+  border: 1px solid #dfdfdf;
+  width: 960px;
+  height: 272px;
+  background-color: #fff;
+  font-size: .875em;
+  text-align: center;
 }
 
 .about-page .container > div .contactus {
@@ -337,52 +343,34 @@ a {
 }
 
 .landing-page .container > div {
-  height: 100vh;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: start;
-  gap: 2em;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  gap: 0.5em;
 }
 
-.landing-page .container > div h1 {
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 65pt;
-  letter-spacing: 2px;
+.landing-page .container > div img {
   width: 70%;
-  font-family: system-ui;
-  background: -webkit-linear-gradient(rgb(197, 110, 110), rgb(92, 29, 29));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.landing-page .container > div .greeting {
-  color: rgb(218 56 56);
-  font-size: 3em;
-  font-family: 'Circular-Loom'; /* stylelint-disable-line */
-  font-weight: 100;
-  margin: 4em 0 0 0;
-  padding: 0;
 }
 
 .landing-page .container > div .about {
-  color: rgb(78, 72, 72);
-  font-size: 1.2em;
-  margin: 0;
-  padding: 1.5em 1em;
-  border: #fff solid 3px;
-  background-color: rgb(222 218 218);
-  width: 50%;
+  text-align: justify;
+  width: 631px;
+  border: 4px solid #fff;
+  background-color: #f7f7f8;
+  margin: 15px 0 40px;
+  line-height: 180%;
+  padding: 10px 25px 0;
+  font-size: 1.125em;
 }
 
 .landing-page .container > div .date {
-  color: rgb(78, 72, 72);
-  font-size: 2.5em;
-  font-family: 'Circular-Loom';/* stylelint-disable-line */
-  font-weight: 900;
+  font: 700 36px Verdana; /* stylelint-disable-line */
+  color: #575757;
+  letter-spacing: -2px;
   margin: 0;
   padding: 0;
 }
@@ -390,6 +378,8 @@ a {
 .landing-page .container > div .location {
   color: rgb(78, 72, 72);
   font-size: 1.5em;
+  font-family: 'Nanum Gothic';/* stylelint-disable-line */
+  color: #333;
   margin: 0;
   padding: 0;
 }
@@ -406,30 +396,45 @@ a {
   color: #fff;
 }
 
-.main-program .cards {
+/* .main-program .cards {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.2em;
 }
+*/
 
-.main-program .cards .card {
+.main-program  .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  padding: 10px;
+  align-items: start;
+  justify-content: center;
+}
+
+.main-program  .grid-item {
+  padding: 2px;
+  text-align: center;
+}
+
+.main-program  .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 18%;
+  /* align-items: center;
+  justify-content: start; */
+  /* flex-basis: 18%; */
   background-color: rgb(88, 85, 85);
   padding: 0.8em;
   align-self: baseline;
+  height: 15em;
   gap: 1em;
 }
 
-.main-program .cards .card:hover {
+.main-program .card:hover {
   border: 1px #fff solid;
 }
 
-.main-program .cards .card h3 {
+.main-program .card h3 {
   color: rgb(223, 59, 59);
   text-transform: capitalize;
   font-size: 1.5em;
@@ -438,12 +443,12 @@ a {
   padding: 0;
 }
 
-.main-program .cards .card p,
-.main-program .cards .card i {
+.main-program .card p,
+.main-program .card i {
   color: #fff;
   margin: 0;
   padding: 0;
-}
+} 
 
 .main-program .link-all a {
   color: #fff;
@@ -498,6 +503,7 @@ a {
 
 .featured-speakers .speakers .speaker > div:nth-child(2) {
   flex-basis: 60%;
+  padding-left: 10px;
 }
 
 .featured-speakers .speakers .profile {
@@ -526,19 +532,19 @@ a {
 }
 
 .featured-speakers .speaker .biodata h3 {
-  color: #000;
+  color: inherit;
   text-transform: capitalize;
-  padding: 0;
-  margin: 0%;
-  font-size: 1.8em;
-  font-weight: 900;
+  font-size: 22px;
+  text-align: left;
+  margin: 0;
 }
 
 .featured-speakers .speaker .biodata .position {
-  color: rgb(176, 54, 54);
   padding: 0;
   margin: 0%;
-  font-size: 1.1em;
+  font-size: 15px;
+  color: #ff4f38;
+  text-align: left;
 }
 
 .featured-speakers .speaker .biodata .spliter {
@@ -550,7 +556,11 @@ a {
   color: rgb(78, 72, 72);
   padding: 0;
   margin: 0%;
-  font-size: 1.1em;
+  word-break: keep-all;
+  text-align: left;
+  font-size: 1em;
+  padding-right: 1em;
+  line-height: 24px;
 }
 
 .featured-speakers .speaker-btn {
@@ -596,7 +606,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 20px 0;
+  padding: 47px 0;
 }
 
 .partners > div:first-child,
@@ -617,7 +627,8 @@ a {
 .logo-page h2,
 .past-summits h2 {
   text-transform: capitalize;
-  font-size: 2.3em;
+  font-size: 30px;
+  font-weight: 400;
   margin: 0;
   padding: 0;
 }
@@ -658,14 +669,22 @@ footer .container > div > a {
 
 footer .container > div > a span {
   margin-left: 0.5em;
-  font-size: 2em;
+  font-size: 1.85em;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+footer .content span,
+footer .content p {
+  margin-left: 0.5em;
+  font-size: 0.85em;
   font-weight: 900;
   text-transform: capitalize;
 }
 
 footer .container > div a img {
-  height: 5em;
-  width: 5em;
+  height: 3em;
+  width: 3em;
   border-radius: 50%;
 }
 
