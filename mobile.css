@@ -1,0 +1,356 @@
+/* stylelint-disable  no-descending-specificity */
+@media all and (max-width: 768px) {
+  .d-on {
+    display: none;
+  }
+
+  .m-on {
+    display: block;
+  }
+
+  .cover-toggle {
+    background-color: #fff !important;
+  }
+
+  .color-toggle {
+    color: #000 !important;
+  }
+
+  .container {
+    margin: 0 1em;
+    width: auto;
+  }
+
+  .top-tag {
+    display: none;
+  }
+
+  .top-nav {
+    flex-direction: column;
+    align-items: start;
+    margin: 0 0;
+    flex-basis: 100%;
+    width: 100%;
+    order: 2;
+  }
+
+  .top-nav .logo {
+    display: none;
+  }
+
+  .m-hidden {
+    display: none !important;
+  }
+
+  .top-nav .humberger {
+    display: block;
+  }
+
+  .top-nav ul {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    display: none;
+  }
+
+  .top-nav .home-mobile {
+    display: flex;
+  }
+
+  .top-nav ul li {
+    border-bottom: 1px solid gray;
+  }
+
+  .top-nav ul li a {
+    font-size: xxx-large;
+  }
+
+  .top-nav .humberger-close {
+    margin-top: 1em;
+    align-self: end;
+    order: -1;
+  }
+
+  .top-nav .tag {
+    display: none;
+  }
+
+  /* xxxxxxxxxxxxxxx About page */
+
+  .about-page .container > div {
+    height: auto;
+    gap: 1em;
+    padding: 2em 0;
+  }
+
+  .about-page .container img {
+    width: 98%;
+  }
+
+  .about-page .container > div h1 {
+    font-size: 28pt;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-page .container > div .greeting {
+    visibility: visible;
+  }
+
+  .about-page .container > div .about {
+    width: 100%;
+    padding: 18px 18px;
+    line-height: 25px;
+    height: auto;
+    font-size: 0.875em;
+    text-align: center;
+  }
+
+  .about-page .container > div .contactus {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .about-page .container > div .mail a {
+    font-size: 0.98em;
+    margin-bottom: 3em;
+  }
+
+  /* xxxxxxxxxxxx logo page */
+
+  .logo-page h2 {
+    margin: 0.5em 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .logo-page .about {
+    font-size: 1.1em;
+    padding: 1em 0;
+    width: 100%;
+  }
+
+  .logo-page img {
+    margin-bottom: 2em;
+    width: 98%;
+    padding: 0;
+  }
+
+  /* xxxxxxxxxxxxxx past summits */
+
+  .past-summits h2 {
+    margin: 0.5em 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .past-summits .about {
+    font-size: 1.1em;
+    padding: 1em 0;
+    width: 100%;
+  }
+
+  .past-summits .summits {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .past-summits .summits > div {
+    flex-basis: 100%;
+  }
+
+  .past-summits .summits > div .text {
+    top: 15%;
+    left: 0;
+    text-align: center;
+  }
+
+  .past-summits .summits > div .text h3 {
+    font-size: 3em;
+  }
+
+  .past-summits .summits > div .text p {
+    font-size: 1.3em;
+  }
+
+  .past-summits .summits > div img {
+    outline-offset: -8em;
+    height: 13em;
+    width: 18em;
+  }
+
+  /* xxxxxxxxxxxxxxx landing page */
+
+  .landing-page {
+    background: url('images/mobile_intro_bg.png') no-repeat top;
+    height: auto;
+  }
+
+  .landing-page .container > div {
+    gap: 1em;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .landing-page .container > div img {
+    width: 100%;
+  }
+
+  .landing-page .container > div .about {
+    margin: 17px 0;
+    width: 100%;
+    padding: 1em 0.5em;
+    line-height: 150%;
+    font-size: 13px;
+    height: auto;
+    text-align: justify;
+    word-break: break-all;
+  }
+
+  .landing-page .container > div .date {
+    font-size: 1.25em;
+  }
+
+  .landing-page .container > div .location {
+    font-size: 1em;
+  }
+
+  /* xxxxxxxxxx main program */
+
+  .main-program .program-list {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .main-program .program-list .program {
+    width: 100%;
+    height: auto;
+    margin: 0 0 5px 3px;
+    display: table;
+  }
+
+  .main-program .program-list .program .icon {
+    float: left;
+  }
+
+  .main-program .program-list .program .title {
+    float: left;
+    width: 26%;
+    font-size: 14px;
+    line-height: 52px;
+    vertical-align: middle;
+  }
+
+  .main-program .program-list .program .text {
+    float: left;
+    width: calc(74% - 6.5em);
+    font-size: 0.75em;
+    text-align: left;
+    word-break: keep-all;
+  }
+
+  .main-program .link-all a {
+    display: none;
+  }
+
+  .main-program .input-btn {
+    display: flex;
+  }
+
+  /* xxxxxxxxxxxxxxx speakers */
+
+  .featured-speakers .speakers {
+    margin: 2em 0;
+  }
+
+  .featured-speakers .speakers > div {
+    flex-basis: 100%;
+  }
+
+  .featured-speakers .speakers .speaker > div:first-child {
+    flex-basis: 32%;
+  }
+
+  .featured-speakers .speakers .speaker > div:nth-child(2) {
+    flex-basis: 78%;
+  }
+
+  .featured-speakers .speakers .profile img:first-child {
+    width: 3em;
+    height: 3em;
+    top: -8px;
+    left: -8px;
+  }
+
+  .featured-speakers .speakers .profile img:nth-child(2) {
+    width: 6em;
+    height: 6em;
+  }
+
+  .featured-speakers .speaker .biodata h3 {
+    font-size: 1.2em;
+  }
+
+  .featured-speakers .speaker .biodata .position {
+    font-size: 1em;
+  }
+
+  .featured-speakers .speaker .biodata .description {
+    font-size: 1em;
+  }
+
+  .featured-speakers .speaker-btn {
+    display: block;
+  }
+
+  /* xxxxxxxxxxxxxxx partners */
+
+  .partners > div,
+  .featured-speakers > div,
+  .main-program > div,
+  .past-summits > div,
+  .logo-page > div {
+    padding: 20px 0;
+    padding-top: 1em;
+  }
+
+  .partners h2,
+  .featured-speakers h2,
+  .main-program h2,
+  .logo-page h2 {
+    font-size: 1.5em;
+  }
+
+  .partners p.underline,
+  .featured-speakers p.underline,
+  .main-program p.underline,
+  .logo-page p.underline {
+    width: 15%;
+  }
+
+  .partners img {
+    width: 21.33%;
+    height: 37px;
+    margin: 0 18px;
+  }
+
+  /* xxxxxxxxxxxxxxxxxx footer */
+
+  footer .container > div a img {
+    height: auto;
+    width: 8em;
+  }
+
+  footer .container > div > div > p {
+    display: none;
+  }
+
+  footer .container > div > div span {
+    font-size: 0.8em;
+    padding-left: 1em;
+  }
+}
