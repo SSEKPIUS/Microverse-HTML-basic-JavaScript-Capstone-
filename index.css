@@ -22,6 +22,22 @@ body {
   color: #333;
 }
 
+.d-on {
+  display: block;
+}
+
+.m-on {
+  display: none;
+}
+
+.cover-toggle {
+  background-color: #272a32 !important;
+}
+
+.color-toggle {
+  color: #fff !important;
+}
+
 .d-none {
   display: none !important;
 }
@@ -67,15 +83,6 @@ a {
 
 .pattern {
   background-image: url('images/pattern_bg.png');
-}
-
-.cover-darker-desktop {
-  background-color: rgba(0, 0, 0, 0.761) !important;
-  color: #fff;
-}
-
-.cover-darker-desktop * {
-  color: #fff !important;
 }
 
 .cover-white {
@@ -231,11 +238,46 @@ a {
 }
 
 .about-page .container > div .mail {
+  text-align: center;
+}
+
+.about-page .container > div .mail a {
   color: #000;
   font-size: 1.2em;
   margin: 0;
   padding: 0;
   text-decoration: underline;
+}
+
+/* xxxxxxxxxxx logopage */
+
+.logo-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.271);
+}
+
+.logo-page h2 {
+  color: rgb(78, 72, 72);
+}
+
+.logo-page .about {
+  color: rgb(78, 72, 72);
+  font-size: 1.2em;
+  margin: 0;
+  padding: 1.5em 1em;
+  width: 80%;
+  text-align: center;
+}
+
+.logo-page img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  padding: 0 7em;
 }
 
 /* xxxxxxxxxxxxxx past summits */
@@ -246,7 +288,6 @@ a {
   width: 100%;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .past-summits h2 {
@@ -293,7 +334,6 @@ a {
 }
 
 .past-summits .summits > div img {
-  outline: 11em solid rgba(255, 0, 0, 0.353) !important;
   outline-offset: -11em;
   overflow: hidden;
   height: 22em;
@@ -559,7 +599,8 @@ a {
 .partners > div,
 .featured-speakers > div,
 .main-program > div,
-.past-summits > div {
+.past-summits > div,
+.logo-page > div {
   display: flex;
   flex-wrap: wrap;
   gap: 2px;
@@ -572,7 +613,8 @@ a {
 .partners > div:first-child,
 .featured-speakers > div:first-child,
 .main-program > div:first-child,
-.past-summits > div:first-child {
+.past-summits > div:first-child,
+.logo-page > div:first-child {
   flex-direction: column;
 }
 
@@ -583,7 +625,8 @@ a {
 .partners h2,
 .featured-speakers h2,
 .main-program h2,
-.past-summits h2 {
+.past-summits h2,
+.logo-page h2 {
   text-transform: capitalize;
   font-size: 30px;
   font-weight: 400;
@@ -594,7 +637,8 @@ a {
 .partners p.underline,
 .featured-speakers p.underline,
 .main-program p.underline,
-.past-summits p.underline {
+.past-summits p.underline,
+.logo-page p.underline {
   border-bottom: 1px solid red;
   width: 4%;
   margin: 0;

@@ -44,6 +44,11 @@ const featuredSpeakers = [
   },
 ];
 
+function showBottom() {
+  document.querySelector('.partners').classList.remove('m-hidden');
+  document.querySelector('.bottom').classList.remove('m-hidden');
+}
+
 const container = document.querySelector('.featured-speakers .speakers');
 const isMobile = window.matchMedia('all and (max-width: 768px)').matches;
 function showSpeakers(override = false) {
@@ -108,6 +113,7 @@ function showSpeakers(override = false) {
 
       speakerBtn.addEventListener('click', () => {
         container.innerHTML = '';
+        showBottom();
         showSpeakers(true);
       });
 
