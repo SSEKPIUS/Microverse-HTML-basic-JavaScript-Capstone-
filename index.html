@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="index.js" defer></script>
+        <script src="home.js" defer></script>
         <link rel="stylesheet"
             href="font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="index.css">
@@ -15,29 +16,29 @@
 
     <body>
         <header>
-            <div class="cover-darker">
-                <div class="container">
-                    <ul class="top-tag">
-                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                        <li>Logout</li>
-                        <li>Mypage</li>
-                        <li>Korean</li>
-                    </ul>
+            <nav>
+                <div class="cover-darker">
+                    <div class="container">
+                        <ul class="top-tag">
+                            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                            <li>Logout</li>
+                            <li>Mypage</li>
+                            <li>Korean</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="cover-white">
-                <div class="container">
-                    <div class="top-nav">
-                        <a class="logo" href="/#">
-                            <img src="images/logo.jpeg" alt="logo">
-                        </a>
-                        <div class="humberger" onclick="toggleMobileMenu()">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <nav>
+                <div class="cover-white">
+                    <div class="container">
+                        <div class="top-nav">
+                            <a class="logo" href="/#">
+                                <img src="images/logo.png" alt="logo">
+                            </a>
+                            <div class="humberger">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
                             <ul>
                                 <li class="active">
                                     <a href="/">Home</a>
@@ -55,35 +56,39 @@
                                     <a class="nav-link" href="#Sponsor">Sponsor</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link disabled" href="#News">News</a>
+                                    <a class="nav-link disabled"
+                                        href="#News">News</a>
                                 </li>
                             </ul>
-                        </nav>
-                        <div class="humberger-close"
-                            onclick="toggleMobileMenu()">
-                            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-                        </div>
-                        <div class=" tag">
-                            <span>
-                                live aware
-                            </span>
+                            <div class="humberger-close">
+                                <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                            </div>
+                            <div class=" tag">
+                                <span>
+                                    CC Campaign
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </nav>
         </header>
 
         <section>
             <div class="landing-page">
                 <div class="container">
                     <div>
-                        <img src="images/title.png" alt="welcome sharing world!  creative commons global summit 2015">
-                        <p class="about">A joyful celebration believing in the value of openness and sharing, 
-                            creating a positive change with poeple from all over 100 countries is taking place in October 
+                        <img src="images/title.png" alt="welcome sharing world!
+                            creative commons global summit 2015">
+                        <p class="about">A joyful celebration believing in the
+                            value of openness and sharing,
+                            creating a positive change with poeple from all over
+                            100 countries is taking place in October
                             ,in korea.
                         </p>
                         <p class="date">2022.10.17(THUR) ~ 30(FRI)</p>
-                        <p class="location">@ National Museum of Korea, Art Center Nabi and more</p>
+                        <p class="location">@ National Museum of Korea, Art
+                            Center Nabi and more</p>
                     </div>
                 </div>
             </div>
@@ -97,80 +102,85 @@
                             <h2>main program</h2>
                             <p class="underline"></p>
                         </div>
-                        <div class="grid-container">
-                            <!-- <div class="grid-item">
-                                <div class="card">
-                                    <i class="fa fa-podcast fa-2x"
-                                        aria-hidden="true"></i>
-                                    <h3>lecture</h3>
-                                    <p>Diam justo et amet sadipscing accusam duo et.
-                                        Sea ipsum lorem est sadipscing ipsum est
-                                        duo.</p>
+                        <div class="program-list">
+                            <div class="program">
+                                <div class="icon">
+                                    <img src="images/program_icon_01.png"
+                                        alt="program">
+                                </div>
+                                <div class="title">
+                                    <span>conference</span>
+                                </div>
+                                <div class="text">
+                                    <span>
+                                        Listen to lectures from speakers from
+                                        around the world and learn about the
+                                        latest trends in the world.
+                                    </span>
                                 </div>
                             </div>
-                            <div class="grid-item">
-                                <div class="card">
-                                    <i class="fa fa-podcast fa-2x"
-                                        aria-hidden="true"></i>
-                                    <h3>lecture</h3>
-                                    <p>Diam justo et amet sadipscing accusam duo et.
-                                        Sea ipsum lorem est sadipscing ipsum est
-                                        duo.</p>
+                            <div class="program">
+                                <div class="icon">
+                                    <img src="images/program_icon_02.png"
+                                        alt="program">
+                                </div>
+                                <div class="title">
+                                    <span>CC exhibition</span>
+                                </div>
+                                <div class="text">
+                                    <span>
+                                        Let's meet the creations of artists from
+                                        various fields who share the open spirit
+                                        of CC.
+                                    </span>
                                 </div>
                             </div>
-                            <div class="grid-item">
-                                <div class="card">
-                                    <i class="fa fa-shopping-bag fa-2x"
-                                        aria-hidden="true"></i>
-                                    <h3>CC exhibition</h3>
-                                    <p>Seemed and charms cheer from for he, to true
-                                        one amiss maidens whose mine below dares..</p>
+                            <div class="program">
+                                <div class="icon">
+                                    <img src="images/program_icon_03.png"
+                                        alt="program">
                                 </div>
-                            </div>   -->
-
-                            <div class="grid-item">
-                                <div class="card grid-container2">
-                                    <div class="grid-item2">
-                                        <i class="fa fa-forumbee fa-2x"
-                                        aria-hidden="true"></i>
-                                    </div>
-                                    <div class="grid-item2">
-                                        <h3>forum</h3>
-                                    </div>
-                                    <div class="grid-item2">
-                                        <p>Und folgenden michjenem folgenden ihr euch
-                                            dunst ist fühlt busen, fühl die.</p>
-                                    </div>
+                                <div class="title">
+                                    <span>forum</span>
+                                </div>
+                                <div class="text">
+                                    <span>
+                                        We have time to share our thoughts and
+                                        opinions with experts by topic.
+                                    </span>
                                 </div>
                             </div>
-
-                            <div class="grid-item">
-                                <div class="card grid-container2">
-                                    <div class="grid-item2">
-                                        <i class="fa fa-building fa-2x"
-                                        aria-hidden="true"></i>
-                                    </div>
-                                    <div class="grid-item2">
-                                        <h3>workshop</h3>
-                                    </div>
-                                    <div class="grid-item2">
-                                        <p>Fyodumtul nym hioll de um yg symeonnok
-                                            therthetyk vh ualallal uiraga werethul
-                                            therthetyk. Urodum.</p>
-                                    </div>
+                            <div class="program">
+                                <div class="icon">
+                                    <img src="images/program_icon_04.png"
+                                        alt="program">
+                                </div>
+                                <div class="title">
+                                    <span>workshop</span>
+                                </div>
+                                <div class="text">
+                                    <span>
+                                        You can create your own creations using
+                                        open source instead of just looking at
+                                        them.
+                                    </span>
                                 </div>
                             </div>
-
-                            <!-- <div class="grid-item">
-                                <div class="card">
-                                    <i class="fa fa-free-code-camp fa-2x"
-                                        aria-hidden="true"></i>
-                                    <h3>CC ignite</h3>
-                                    <p>Kiun sakon tien-cxi metitan veloj la povis
-                                        sendube gastoj sian sed, ridetis en knabo
-                                        pri la sxipo.</p>
+                            <div class="program">
+                                <div class="icon">
+                                    <img src="images/program_icon_05.png"
+                                        alt="program">
                                 </div>
-                            </div>  -->
+                                <div class="title">
+                                    <span>CC party</span>
+                                </div>
+                                <div class="text">
+                                    <span>
+                                        Create opportunities to freely network
+                                        with CC personnel from around the world.
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                         <div class="link-all">
                             <a href="#">
@@ -226,18 +236,16 @@
                 <div class="container">
                     <div>
                         <a href="/">
-                            <img src="images/logo.jpeg" alt="logo">
-                            <span>live aware</span>
+                            <img src="images/cck-logo1.png" alt="logo">
                         </a>
                         <div class="content">
-                            <span>2022 live aware, corporate rights reserved</span>
+                            <span><b>2015 Creative Commons Korea. Some Rights Reserved.</b></span>
                             <p>Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit.
                                 Eaque sed in perferendis, quod aperiam optio
                                 maiores omnis ipsum,
                                 et pariatur tempore fuga quisquam reprehenderit
-                                veritatis,
-                                molestias corporis dolores sapiente commodi!</p>
+                                veritatis.</p>
                         </div>
                     </div>
                 </div>

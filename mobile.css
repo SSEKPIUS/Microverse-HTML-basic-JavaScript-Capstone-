@@ -1,12 +1,13 @@
 /* stylelint-disable  no-descending-specificity */
 @media all and (max-width: 768px) {
   .cover-darker-desktop {
-    background-color: inherit !important;
+    background-color: rgba(0, 0, 0) !important;
     color: #fff;
   }
 
   .cover-darker-desktop * {
-    color: black !important;
+    background-color: rgba(0, 0, 0, 0.761) !important;
+    color: #fff !important;
   }
 
   .container {
@@ -21,6 +22,10 @@
   .top-nav {
     flex-direction: column;
     align-items: start;
+    margin: 0 0;
+    flex-basis: 100%;
+    width: 100%;
+    order: 2;
   }
 
   .top-nav .logo {
@@ -31,36 +36,29 @@
     display: block;
   }
 
-  .top-nav nav {
-    margin: 0 0;
-    flex-basis: 100%;
-    width: 100%;
-    order: 2;
-    display: none;
-  }
-
-  .top-nav nav ul {
+  .top-nav ul {
     flex-direction: column;
     padding: 0;
     width: 100%;
+    display: none;
   }
 
   .top-nav .home-mobile {
     display: flex;
   }
 
-  .top-nav nav ul li {
+  .top-nav ul li {
     border-bottom: 1px solid gray;
   }
 
-  .top-nav nav ul li a {
+  .top-nav ul li a {
     font-size: xxx-large;
   }
 
   .top-nav .humberger-close {
-    /* display: block; */
     margin-top: 1em;
     align-self: end;
+    order: -1;
   }
 
   .top-nav .tag {
@@ -72,6 +70,11 @@
   .about-page .container > div {
     height: auto;
     gap: 1em;
+    padding: 2em 0;
+  }
+
+  .about-page .container img {
+    width: 98%;
   }
 
   .about-page .container > div h1 {
@@ -85,40 +88,22 @@
   }
 
   .about-page .container > div .about {
-    padding: 1em 1em;
     width: 100%;
+    padding: 18px 18px;
+    line-height: 25px;
+    height: auto;
+    font-size: 0.875em;
+    text-align: left;
   }
 
   .about-page .container > div .contactus {
     font-size: 1.1em;
-    text-align: center;
+    text-align: left;
   }
 
   .about-page .container > div .mail {
     font-size: 1em;
     margin-bottom: 3em;
-  }
-
-  /* xxxxxxxxxxxx logo page */
-
-  .logo-page h2 {
-    margin: 0.5em 0;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 1.5em;
-  }
-
-  .logo-page .about {
-    font-size: 1.1em;
-    padding: 1em 0;
-    width: 100%;
-  }
-
-  .logo-page img {
-    border: 1px #cfbcbc solid;
-    margin-bottom: 2em;
-    width: 100%;
   }
 
   /* xxxxxxxxxxxxxx past summits */
@@ -169,10 +154,10 @@
 
   /* xxxxxxxxxxxxxxx landing page */
 
-.landing-page {
-  background: url('images/mobile_intro_bg.png') no-repeat top;
-  height: auto;
-}
+  .landing-page {
+    background: url('images/mobile_intro_bg.png') no-repeat top;
+    height: auto;
+  }
 
   .landing-page .container > div {
     gap: 1em;
@@ -196,35 +181,44 @@
   }
 
   .landing-page .container > div .date {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 
   .landing-page .container > div .location {
     font-size: 1em;
   }
 
-  /* xxxxxxxxxxxxxxx program */
+  /* xxxxxxxxxx main program */
 
-  /* .main-program .cards {
+  .main-program .program-list {
     flex-direction: column;
-    gap: 0.8em;
   }
 
-  .main-program .cards .card {
-    flex-direction: row;
-    justify-content: start;
-    flex-basis: 100%;
-  } */
-
-  .main-program  .grid-container {
-    grid-template-columns: auto;
-    padding: 0;
-  }
-
-  .main-program .card {
-    flex-direction: row;
-    flex-basis: 100%;
+  .main-program .program-list .program {
+    width: 100%;
     height: auto;
+    margin: 0 0 5px 3px;
+    display: table;
+  }
+
+  .main-program .program-list .program .icon {
+    float: left;
+  }
+
+  .main-program .program-list .program .title {
+    float: left;
+    width: 26%;
+    font-size: 14px;
+    line-height: 52px;
+    vertical-align: middle;
+  }
+
+  .main-program .program-list .program .text {
+    float: left;
+    width: calc(74% - 6.5em);
+    font-size: 0.75em;
+    text-align: left;
+    word-break: keep-all;
   }
 
   .main-program .link-all a {
@@ -286,7 +280,6 @@
   .partners > div,
   .featured-speakers > div,
   .main-program > div,
-  .logo-page > div,
   .past-summits > div {
     padding: 20px 0;
   }
@@ -312,12 +305,8 @@
   /* xxxxxxxxxxxxxxxxxx footer */
 
   footer .container > div a img {
-    height: 3em;
-    width: 3em;
-  }
-
-  footer .container > div > a span {
-    font-size: 1em;
+    height: auto;
+    width: 8em;
   }
 
   footer .container > div > div > p {

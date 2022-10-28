@@ -16,10 +16,9 @@ html {
 body {
   font-family: 'lato' !important; /* stylelint-disable-line */
   background: #fff;
-  color: #000;
   margin: 0;
   padding: 0;
-  overflow-x: hidden !important;    margin: 0;
+  overflow-x: hidden !important;
   color: #333;
 }
 
@@ -35,13 +34,19 @@ body {
   height: 100vh;
 }
 
-header {
+header nav {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
   width: 100%;
   top: 0;
+}
+
+footer,
+nav {
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -61,7 +66,7 @@ a {
 }
 
 .pattern {
-   background-image: url('images/pattern_bg.png');
+  background-image: url('images/pattern_bg.png');
 }
 
 .cover-darker-desktop {
@@ -93,7 +98,6 @@ a {
   justify-content: end;
   gap: 1em;
   color: white;
-  margin: 5px;
 }
 
 .top-nav {
@@ -107,8 +111,8 @@ a {
 }
 
 .top-nav .logo img {
-  width: 80px;
-  height: 80px;
+  width: auto;
+  height: 63px;
 }
 
 .top-nav .humberger {
@@ -122,11 +126,6 @@ a {
   margin: 6px 0;
 }
 
-.top-nav nav {
-  display: flex;
-  margin: 0 5em;
-}
-
 .top-nav .home-mobile {
   display: none;
 }
@@ -135,7 +134,7 @@ a {
   color: rgb(198, 27, 27) !important;
 }
 
-.top-nav nav ul {
+.top-nav ul {
   display: flex;
   flex-direction: row;
   gap: 2em;
@@ -144,12 +143,12 @@ a {
   flex-wrap: nowrap;
 }
 
-.top-nav nav ul a {
+.top-nav ul a {
   color: rgb(78, 72, 72);
   font-size: 0.938em;
 }
 
-.top-nav nav ul a:focus {
+.top-nav ul a:focus {
   color: rgb(199, 47, 47);
 }
 
@@ -165,8 +164,8 @@ a {
   justify-content: center;
   align-items: center;
   font-weight: bolder;
-  text-transform: uppercase;
   color: red;
+  margin-left: 1em;
 }
 
 .top-nav .tag span {
@@ -220,7 +219,7 @@ a {
   width: 960px;
   height: 272px;
   background-color: #fff;
-  font-size: .875em;
+  font-size: 0.875em;
   text-align: center;
 }
 
@@ -237,39 +236,6 @@ a {
   margin: 0;
   padding: 0;
   text-decoration: underline;
-}
-
-/* xxxxxxxxxxx logopage */
-
-.logo-page {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.271);
-}
-
-.logo-page h2 {
-  color: rgb(78, 72, 72);
-}
-
-.logo-page .about {
-  color: rgb(78, 72, 72);
-  font-size: 1.2em;
-  margin: 0;
-  padding: 1.5em 1em;
-  width: 80%;
-  text-align: center;
-}
-
-.logo-page img {
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px #cfbcbc solid;
-  margin-bottom: 2em;
-  padding: 0 7em;
 }
 
 /* xxxxxxxxxxxxxx past summits */
@@ -376,7 +342,6 @@ a {
 }
 
 .landing-page .container > div .location {
-  color: rgb(78, 72, 72);
   font-size: 1.5em;
   font-family: 'Nanum Gothic';/* stylelint-disable-line */
   color: #333;
@@ -396,59 +361,55 @@ a {
   color: #fff;
 }
 
-/* .main-program .cards {
+.main-program .program-list {
   display: flex;
+  flex-wrap: nowrap;
+  gap: 2px;
+  justify-content: center;
   align-items: center;
-  justify-content: center;
-  gap: 0.2em;
-}
-*/
-
-.main-program  .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  padding: 10px;
-  align-items: start;
-  justify-content: center;
+  width: 100%;
+  padding: 47px 0;
 }
 
-.main-program  .grid-item {
-  padding: 2px;
+.main-program .program-list .program {
+  margin: 0 0 0 3px;
+  padding: 0;
+  border: 0;
+  float: left;
+  width: calc(20% - 3px);
+  height: 250px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.main-program .program-list .program:hover {
+  border: 1px wheat solid;
+}
+
+.main-program .program-list .program .icon {
+  margin-top: 21px;
+  position: relative;
   text-align: center;
+  color: rgb(255, 255, 255);
 }
 
-.main-program  .card {
-  display: flex;
-  flex-direction: column;
-  /* align-items: center;
-  justify-content: start; */
-  /* flex-basis: 18%; */
-  background-color: rgb(88, 85, 85);
-  padding: 0.8em;
-  align-self: baseline;
-  height: 15em;
-  gap: 1em;
-}
-
-.main-program .card:hover {
-  border: 1px #fff solid;
-}
-
-.main-program .card h3 {
-  color: rgb(223, 59, 59);
-  text-transform: capitalize;
+.main-program .program-list .program .title {
+  color: rgb(239, 81, 60);
   font-size: 1.5em;
-  font-weight: 900;
-  margin: 0;
-  padding: 0;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 17px;
 }
 
-.main-program .card p,
-.main-program .card i {
-  color: #fff;
-  margin: 0;
-  padding: 0;
-} 
+.main-program .program-list .program .text {
+  text-align: center;
+  word-break: keep-all;
+  color: rgb(255, 255, 255);
+  font-size: 0.913em;
+  padding: 0 17px;
+  line-height: 1.5em;
+  margin-top: 22px;
+  margin-bottom: 10px;
+}
 
 .main-program .link-all a {
   color: #fff;
@@ -598,7 +559,6 @@ a {
 .partners > div,
 .featured-speakers > div,
 .main-program > div,
-.logo-page > div,
 .past-summits > div {
   display: flex;
   flex-wrap: wrap;
@@ -612,7 +572,6 @@ a {
 .partners > div:first-child,
 .featured-speakers > div:first-child,
 .main-program > div:first-child,
-.logo-page > div:first-child,
 .past-summits > div:first-child {
   flex-direction: column;
 }
@@ -624,7 +583,6 @@ a {
 .partners h2,
 .featured-speakers h2,
 .main-program h2,
-.logo-page h2,
 .past-summits h2 {
   text-transform: capitalize;
   font-size: 30px;
@@ -636,7 +594,6 @@ a {
 .partners p.underline,
 .featured-speakers p.underline,
 .main-program p.underline,
-.logo-page p.underline,
 .past-summits p.underline {
   border-bottom: 1px solid red;
   width: 4%;
@@ -667,25 +624,21 @@ footer .container > div > a {
   justify-content: start;
 }
 
-footer .container > div > a span {
-  margin-left: 0.5em;
-  font-size: 1.85em;
-  font-weight: 900;
-  text-transform: capitalize;
-}
-
 footer .content span,
 footer .content p {
   margin-left: 0.5em;
   font-size: 0.85em;
-  font-weight: 900;
   text-transform: capitalize;
+}
+
+footer .content span {
+  font-size: 0.95em;
+  color: #000;
 }
 
 footer .container > div a img {
   height: 3em;
-  width: 3em;
-  border-radius: 50%;
+  width: auto;
 }
 
 footer .container > div > div {
